@@ -1,5 +1,7 @@
 {
-  "_id": "60e8d0a3d4f8e5c3b1e7a5b2",
+  "_id": {
+    "$oid": "60e8d0a3d4f8e5c3b1e7a5b2"
+  },
   "createAt": "2025-09-02T02:36:31.507Z",
   "updateAt": "2025-09-02T02:36:31.507Z",
   "logics": [
@@ -9,7 +11,9 @@
   "conditions": [
     {
       "type": "parameter",
-      "parameterId": "68ac31e963dcea809c980711",
+      "parameterId": {
+    "$oid": "68ac31e963dcea809c980711"
+  },
       "operator": "greater",
       "value": "50",
       "range": {
@@ -20,7 +24,9 @@
     },
     {
       "type": "parameter",
-      "parameterId": "68ac320563dcea809c980712",
+      "parameterId": {
+    "$oid": "68ac320563dcea809c980712"
+  },
       "operator": "equal",
       "value": "hello",
       "range": {
