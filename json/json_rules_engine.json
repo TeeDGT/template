@@ -1,0 +1,66 @@
+{
+  "_id": "#conditionId",
+  "createAt": "2025-09-02T02:36:31.507Z",
+  "updateAt": "2025-09-02T02:36:31.507Z",
+  "logics": [
+    "AND",
+    "OR"
+  ],
+  "conditions": [
+    {
+      "type": "parameter",
+      "parameterId": "#parameterId",
+      "operator": "greater",
+      "value": "50",
+      "range": {
+        "type": "between",
+        "value": "1",
+        "unit": "hour"
+      }
+    },
+    {
+      "type": "parameter",
+      "parameterId": "#parameterId",
+      "operator": "equal",
+      "value": "hello",
+      "range": {
+        "type": "lastValue",
+        "value": "5",
+        "unit": "record"
+      }
+    },
+    {
+      "type": "api",
+      "url": "http://localhost/",
+      "method": "get",
+      "keyName": "",
+      "operator": "equal",
+      "range": {
+        "type": "lastValue",
+        "value": "5",
+        "unit": "record"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "type": "notification",
+      "header": "",
+      "body": "Hello",
+      "footer": "",
+      "phone": "",
+      "email": ""
+    },
+    {
+      "type": "webhook",
+      "url": "http://localhost/",
+      "method": "post",
+      "data": {}
+    },
+    {
+      "type": "event-log",
+      "collectionName": "events",
+      "data": {}
+    }
+  ]
+}
