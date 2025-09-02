@@ -1,0 +1,9 @@
+{"data":[
+    {
+        "name":"humi",
+        "value":60
+    },{
+        "name":"temp",
+        "value":24
+    }
+]}

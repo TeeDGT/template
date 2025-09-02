@@ -37,9 +37,9 @@
     },
     {
       "type": "api",
-      "url": "http://localhost/",
+      "url": "https://raw.githubusercontent.com/TeeDGT/template/main/demo_sensor.json",
       "method": "get",
-      "keyName": "",
+      "keyName": "data",
       "operator": "equal",
       "range": {
         "type": "lastValue",
